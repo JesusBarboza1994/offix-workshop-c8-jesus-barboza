@@ -1,20 +1,2 @@
 <h1>Edit Department</h1>
-
-<%= form_with model: @department do |form|%>
-  <div>
-    <% @department.errors.full_messages.each do |message| %>
-      <div>
-        <%= message%>
-      </div>
-      <% end %>
-  </div>
-  <div>
-    <%= form.label :name %> <br/>
-    <%= form.text_field :name %>
-  </div>
-  <div>
-    <%= form.label :description %> <br/>
-    <%= form.text_area :description %>
-  </div>
-  <%= form.submit %>
-<% end %>
+<%= render "form", department: @department %>

@@ -4,6 +4,7 @@
     <span><%= department.name %></span>
     <span><%= department.employees_count %> </span>
     <%= link_to "show", department_path(department) %>
+    <%= link_to "edit", edit_department_path(department) %>
     <%= link_to "destroy", department_path(department), data: {
       turbo_method: :delete,
       turbo_confirm: "Are you sure?"
