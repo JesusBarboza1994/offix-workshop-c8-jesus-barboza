@@ -1,6 +1,6 @@
 class Employee < ApplicationRecord
   # Associations
-  belongs_to :department
+  belongs_to :department, counter_cache: true, optional: true
 
   # Validations
   validates :name, presence: true
