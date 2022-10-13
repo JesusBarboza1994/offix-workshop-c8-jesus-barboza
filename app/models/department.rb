@@ -4,5 +4,6 @@ class Department < ApplicationRecord
 
   # Validations
   validates :name, presence: true, uniqueness: true
-  validates :description, length: { in: 30..500 }, allow_blank: true
+  validates :description, length: { in: 10..500 }, allow_blank: true
 end
+
