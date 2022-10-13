@@ -1,4 +1,5 @@
 class Department < ApplicationRecord
+  # Associations
   has_many :employees, dependent: :nullify
 
   # Validations
