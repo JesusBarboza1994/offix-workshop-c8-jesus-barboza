@@ -6,7 +6,9 @@ class DepartmentsController < ApplicationController
   def new
   end
 
+  # GET /departments/:id
   def show
+    @department = Department.find(params[:id])
   end
 
   def create
